@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>C.I.Recruitment</title>
+  <link rel="icon" href="images/favicon.ico" type="image/x-icon" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+  <style>
+    body{
+        font-family:Arial, Helvetica, sans-serif ;
+    }
+    p{
+        color: #6c6c6c;
+    }
+    .form-floating-custom {
+        position: relative;
+    }
+    .form-floating-custom .form-control {
+        border: none;
+        border-bottom: 1px solid #ddd;
+        border-radius: 0 !important;
+        padding-left: 0;
+        background: transparent;
+        box-shadow: none !important;
+    }
+    .form-floating-custom .form-control:focus {
+        border: 1px solid #000;
+        border-radius: 4px;
+    }
+    .form-floating-custom label {
+        color: #000;
+        transition: all 0.2s;
+        padding-left: 0;
+    }
+    .form-floating-custom .form-control:focus~label,
+    .form-floating-custom .form-control:not(:placeholder-shown)~label {
+        transform: scale(0.85) translateY(-1rem) translateX(0.15rem);
+        color: #333;
+    }
+  </style>
+</head>
+<body>
+
+  <!--header-->
+  <div class="header">
+    <img src="images/cilogo.png" class="img-fluid d-block mx-auto" alt="Banner Image">
+  </div>
+
+  <!-- Welcome Section -->
+  <section class="py-5 text-center">
+    <div class="container">
+        <p class="lead " style="font-size: 1rem;font-weight:300">Find Your Dream Job Today</p>
+        <h2 class="mb-4">Connecting talent with opportunities in world job market.</h2>
+        <button class="btn btn-dark rounded-0 py-2 px-4">Get Started</button>
+
+    </div>
+  </section>
+
+  <section>
+    <h3 class="py-5 text-center">About C.I.Recruitment</h3>
+    <div class="row">
+        <div class="col-md-6">
+            <img src="/images/image.png" alt="image" class="img-fluid d-block mx-auto" >
+        </div>
+        <div class="col-md-6">
+            <h5 class="text-center mb-4 mr-4">Our Mission</h5>
+            <p class="text-center mx-4">At C.I. Recruitment, our mission is to connect talented individuals with exceptional job opportunities. We are committed to providing personalised recruitment services that cater to both employers and job seekers.</p>
+        </div>
+    </div>
+      
+  </section>
+
+
+<section class="py-5 bg-light text-center">
+  <div class="container">
+    <h2 class="mb-3">Explore our success stories through these photos</h2>
+    
+    <!-- Thumbnail Gallery Grid 
+    <div class="row g-4" id="galleryGrid">
+      <div class="col-md-4 col-6">
+        <img src="/images/image1.png" data-bs-target="#galleryCarousel" data-bs-slide-to="0" class="img-thumbnail w-100 gallery-thumb" style="height: 200px; object-fit: cover; cursor: pointer;" alt="Success Story 1">
+      </div>
+      <div class="col-md-4 col-6">
+        <img src="/images/image2.png" data-bs-target="#galleryCarousel" data-bs-slide-to="1" class="img-thumbnail w-100 gallery-thumb" style="height: 200px; object-fit: cover; cursor: pointer;" alt="Success Story 2">
+      </div>
+      <div class="col-md-4 col-6">
+        <img src="/images/image3.png" data-bs-target="#galleryCarousel" data-bs-slide-to="2" class="img-thumbnail w-100 gallery-thumb" style="height: 200px; object-fit: cover; cursor: pointer;" alt="Success Story 3">
+      </div>
+      
+      <div class="col-md-4 col-6">
+        <img src="/images/image4.png" data-bs-target="#galleryCarousel" data-bs-slide-to="2" class="img-thumbnail w-100 gallery-thumb" style="height: 200px; object-fit: cover; cursor: pointer;" alt="Success Story 4">
+      </div>
+
+      <div class="col-md-4 col-6">
+        <img src="/images/image5.png" data-bs-target="#galleryCarousel" data-bs-slide-to="2" class="img-thumbnail w-100 gallery-thumb" style="height: 200px; object-fit: cover; cursor: pointer;" alt="Success Story 5">
+      </div>
+      <div class="col-md-4 col-6">
+        <img src="/images/image6.png" data-bs-target="#galleryCarousel" data-bs-slide-to="2" class="img-thumbnail w-100 gallery-thumb" style="height: 200px; object-fit: cover; cursor: pointer;" alt="Success Story 6">
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<div class="modal fade" id="galleryModal" tabindex="-1" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered modal-xl">
+    <div class="modal-content bg-transparent border-0">
+      <div class="modal-header border-0">
+        <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <div id="galleryCarousel" class="carousel slide" data-bs-interval="false">
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <img src="/images/image1.png" class="d-block w-70 h-50" alt="Success Story 1">
+            </div>
+            <div class="carousel-item">
+              <img src="/images/image2.png" class="d-block w-70 h-50" alt="Success Story 2">
+            </div>
+            <div class="carousel-item">
+              <img src="/images/image3.png" class="d-block w-70 h-50" alt="Success Story 3">
+            </div>
+            <div class="carousel-item">
+                <img src="/images/image4.png" class="d-block w-70 h-50" alt="Success Story 4">
+              </div>
+              <div class="carousel-item">
+                <img src="/images/image5.png" class="d-block w-70 h-50" alt="Success Story 5">
+              </div>
+              <div class="carousel-item">
+                <img src="/images/image6.png" class="d-block w-70 h-50" alt="Success Story 6">
+              </div>
+          </div>
+          <button class="carousel-control-prev" type="button" data-bs-target="#galleryCarousel" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button class="carousel-control-next" type="button" data-bs-target="#galleryCarousel" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>-->
+<!-- Thumbnail Grid -->
+<div class="row g-4" id="galleryGrid">
+    <div class="col-md-4">
+      <img src="/images/image1.png" 
+           data-bs-toggle="modal" 
+           data-bs-target="#galleryModal"
+           data-bs-slide-to="0" 
+           class="img-thumbnail w-100 gallery-thumb" 
+           style="height: 200px; object-fit: cover; cursor: pointer;" 
+           alt="Success Story 1">
+    </div>
+    <div class="col-md-4">
+      <img src="/images/image2.png" 
+           data-bs-toggle="modal" 
+           data-bs-target="#galleryModal"
+           data-bs-slide-to="1" 
+           class="img-thumbnail w-100 gallery-thumb" 
+           style="height: 200px; object-fit: cover; cursor: pointer;" 
+           alt="Success Story 2">
+    </div>
+    <div class="col-md-4">
+      <img src="/images/image3.png" 
+           data-bs-toggle="modal" 
+           data-bs-target="#galleryModal"
+           data-bs-slide-to="2" 
+           class="img-thumbnail w-100 gallery-thumb" 
+           style="height: 200px; object-fit: cover; cursor: pointer;" 
+           alt="Success Story 3">
+    </div>
+    <div class="col-md-4">
+      <img src="/images/image4.png" 
+           data-bs-toggle="modal" 
+           data-bs-target="#galleryModal"
+           data-bs-slide-to="3" 
+           class="img-thumbnail w-100 gallery-thumb" 
+           style="height: 200px; object-fit: cover; cursor: pointer;" 
+           alt="Success Story 4">
+    </div>
+    <div class="col-md-4">
+      <img src="/images/image5.png" 
+           data-bs-toggle="modal" 
+           data-bs-target="#galleryModal"
+           data-bs-slide-to="4" 
+           class="img-thumbnail w-100 gallery-thumb" 
+           style="height: 200px; object-fit: cover; cursor: pointer;" 
+           alt="Success Story 5">
+    </div>
+    <div class="col-md-4">
+      <img src="/images/image6.png" 
+           data-bs-toggle="modal" 
+           data-bs-target="#galleryModal"
+           data-bs-slide-to="5" 
+           class="img-thumbnail w-100 gallery-thumb" 
+           style="height: 200px; object-fit: cover; cursor: pointer;" 
+           alt="Success Story 6">
+    </div>
+  </div>
+  
+  <!-- Fullscreen Carousel Modal -->
+  <div class="modal fade" id="galleryModal" tabindex="-1" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered modal-fullscreen">
+      <div class="modal-content bg-dark">
+        <div class="modal-header border-0">
+          <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body d-flex align-items-center justify-content-center p-0">
+          <div id="galleryCarousel" class="carousel slide w-100 h-100" data-bs-ride="carousel">
+            <div class="carousel-inner h-100">
+              <div class="carousel-item active h-100">
+                <img src="/images/image1.png" class="d-block w-100 h-100" style="object-fit: contain;" alt="Success Story 1">
+              </div>
+              <div class="carousel-item h-100">
+                <img src="/images/image2.png" class="d-block w-100 h-100" style="object-fit: contain;" alt="Success Story 2">
+              </div>
+              <div class="carousel-item h-100">
+                <img src="/images/image3.png" class="d-block w-100 h-100" style="object-fit: contain;" alt="Success Story 3">
+              </div>
+              <div class="carousel-item h-100">
+                <img src="/images/image4.png" class="d-block w-100 h-100" style="object-fit: contain;" alt="Success Story 4">
+              </div>
+              <div class="carousel-item h-100">
+                <img src="/images/image5.png" class="d-block w-100 h-100" style="object-fit: contain;" alt="Success Story 5">
+              </div>
+              <div class="carousel-item h-100">
+                <img src="/images/image6.png" class="d-block w-100 h-100" style="object-fit: contain;" alt="Success Story 6">
+              </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#galleryCarousel" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#galleryCarousel" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+
+<section class="mb-10">
+    <h3 class="py-5 text-center">Contact Us</h3>
+    <div class="row">
+        <div class="col-md-6 order-1 order-md-2 mb-4 mb-md-0">
+            <img src="/images/contactus.png" class="img-fluid"/>
+        </div>
+        
+        <div class="col-md-6 order-2 order-md-1 text-center">
+            <h5>C.I. Recruitement</h5>
+        </div>
+    </div>
+</section>
+
+<section class="mt-5">
+    <h3 class="text-center mb-4">Subscribe</h3>
+    <p class="text-center">Sign up to hear from us about specials, sales, and events.
+    </p>
+    <div class="row justify-content-center">
+        <div class="col-md-3"></div>
+    <div class="col-md-5 text-center">
+        <div class="form-floating form-floating-custom mb-3">
+            <input type="email" class="form-control" id="floatingEmail" placeholder="email" style="font-size: 1rem;">
+            <label for="floatingEmail">Email</label>
+        </div>
+    </div>
+    <div class="col-md-2 text-center">
+        <button class="btn btn-dark rounded-0 py-2 px-4 ">Sign up</button>
+    </div>
+    <div class="col-md-2"></div>
+    </div>
+</section>
+
+<footer class="mt-5">
+    <p class="text-center">Copyright © 2025 C.I. Recruitement - All Rights Reserved.</p>
+</footer>
+<script>
+    // Initialize the carousel and handle thumbnail clicks
+document.addEventListener('DOMContentLoaded', function() {
+    const galleryModal = new bootstrap.Modal(document.getElementById('galleryModal'));
+    const carousel = new bootstrap.Carousel(document.getElementById('galleryCarousel'));
+    
+    // Add click event to all thumbnails
+    document.querySelectorAll('.gallery-thumb').forEach(thumb => {
+      thumb.addEventListener('click', function() {
+        const slideIndex = parseInt(this.getAttribute('data-bs-slide-to'));
+        carousel.to(slideIndex);
+        galleryModal.show();
+      });
+    });
+  });
+</script>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
